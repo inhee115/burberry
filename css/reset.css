@@ -1,0 +1,37 @@
+@charset "utf-8";
+
+/* 풀페이지 cdn */
+@import url(https://cdn.jsdelivr.net/npm/fullpage.js@2.9.4/dist/jquery.fullpage.min.js);
+
+/* font */
+@font-face {
+    font-family: "ArialCE";
+    src: url(../font/arial/ArialCE.ttf);
+    src: url(../font/arial/ArialCEBold.ttf);
+    src: url(../font/arial/ArialCEBoldItalic.ttf);
+    src: url(../font/arial/ArialCEItalic.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: #222;
+}
+ol,ul,li{
+    list-style: none;
+}
+img,iframe{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* 잘 기억하고 contain 걸어줄 것은 걸어주기*/
+}
+html,body{
+    font-family: "ArialCE";
+    font-size: 100%;
+    /* 마지막에 지정 */
+    overflow-x: hidden;
+}

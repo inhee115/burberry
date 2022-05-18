@@ -1,0 +1,131 @@
+@charset "utf-8";
+
+.container{
+    height: 100vh;
+}
+/* header */
+#bamburger{
+    display: none;
+}
+
+.header-area{
+    width: 100%;
+    height: 88px;
+    padding: 0 40px;
+    box-sizing: border-box;
+
+    display: flex;
+    align-items: center;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+.header-logo .logo{
+    display: inline-block;
+    width: 175px;
+}
+
+nav{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 32px;
+}
+.menu{
+    width: 650px;
+    height: 18px;
+    display: flex;
+    justify-content: space-between;
+
+    text-align: center;
+    line-height: 18px;
+}
+.menu li a{
+    font-size: 14px;
+}
+
+.icon-box{
+    width: 136px;
+    height: 100%;
+    padding: 32px 0;
+    box-sizing: border-box;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.icon-box li a{
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+}
+
+
+.sub-menu-box{
+    display: none;
+}
+
+/* 스와이퍼 안먹여도됨, 섀도우는 css로  */
+
+/* 슬라이더 */
+
+.mask{
+    position: relative;
+}
+
+.slider-content-box{
+    position: absolute;
+    bottom: 218px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 400px;
+    height: 98px;
+    background-color: #fff;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+
+}
+
+.slider-content-box .arrow-btn{
+    display: flex;
+    position: absolute;
+    top: -39px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.arrow-btn .slide-prev{
+    width: 24px;
+    height: 24px;
+    background: url(../img/chevron_left_black_24dp.svg);
+    background-size: cover;
+    cursor: pointer;
+    margin-right: 50px;
+}
+.arrow-btn .slide-next{
+    width: 24px;
+    height: 24px;
+    background: url(../img/chevron_right_black_24dp.svg);
+    background-size: cover;
+    cursor: pointer;
+}
+
+
+.slide-content{
+    margin-top: 24px;
+}
+.slide-content .content-inner h2{
+    font-size: 12px;
+    font-weight: 300;
+    margin-bottom: 9px;
+}
+.slide-content .content-inner span{
+    font-size: 16px;
+    font-weight: 600;
+}
+.slide-content .content-inner span:last-child{
+    margin-left: 22px;
+}
